@@ -3,21 +3,23 @@ import java.lang.*;
 
 public class MergeLists extends ListNode{
 	public static void main (String[] args) {
+		ListNode one1 = new ListNode(1);
+		ListNode two = new ListNode(2);
+		ListNode four1 = new ListNode(4);
+		one1.next = two; two.next = four1;
 
+
+		ListNode one2 = new ListNode(1);
+		ListNode three = new ListNode(3);
+		ListNode four2 = new ListNode(4);
+		one2.next = three; three.next = four2;
+
+		one1.print();
+		one2.print();
+		ListNode mergedList = mergeTwoLists(one1, one2);
+		mergedList.print();
 	}
 	MergeLists(){
 		super(1);
 	}
-	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null && l2 == null) return null;
-        if (l1 == null) return l2;
-        if (l2 == null) return l1;
-        ListNode mergedList = new ListNode(-1);
-        //the case where both l1 and l2 exist
-
-        while (curr_l1.next != null || curr_l2.next != null) {
-
-        }
-        return mergedList;
-    }
 }
