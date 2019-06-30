@@ -44,12 +44,12 @@ public class CountAndSay {
         		} else {
         			result += Integer.toString(counter) + temp;
         			temp = said.substring(index2, index2+1);
-        			counter = 0;
+        			counter = 1;
         		}
         		index2++;
         	}
         	result += Integer.toString(counter) + temp;
-        	
+
         	said = result;
         	index++;
         }
