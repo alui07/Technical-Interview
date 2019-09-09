@@ -1,4 +1,4 @@
-/*
+/* 20. Valid Parenthesis
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
