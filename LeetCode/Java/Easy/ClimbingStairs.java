@@ -24,20 +24,20 @@ Explanation: There are three ways to climb to the top.
 class Solution {
     public int climbStairs(int n) {
         if (n < 4) return n;
-        int[] hello = new int[3];
-        hello[0] = 1; hello[1] = 2; hello[2] = 3;
+        int[] stairs = new int[3];
+        stairs[0] = 1; stairs[1] = 2; stairs[2] = 3;
         
         //n > 3
         for (int i = 0; i < n-3; i++) {
             int j = i % 3;
             if (j == 0) {
-                hello[j] = hello[j+1] + hello[j+2];
+                stairs[j] = stairs[j+1] + stairs[j+2];
             } else if (j == 1) {
-                hello[j] = hello[j-1] + hello[j+1];
+                stairs[j] = stairs[j-1] + stairs[j+1];
             } else {
-                hello[j] = hello[j-2] + hello[j-1];
+                stairs[j] = stairs[j-2] + stairs[j-1];
             }
         }
-        return hello[(n-1)%3];
+        return stairs[(n-1)%3];
     }
 }
