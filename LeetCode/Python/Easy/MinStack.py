@@ -46,7 +46,9 @@ class MinStack(object):
         """
         :rtype: int
         """
-        return self.stack[len(self.stack)-1];
+
+        #list[-1] returns the last element in the list
+        return self.stack[-1];
         
 
     def getMin(self):
