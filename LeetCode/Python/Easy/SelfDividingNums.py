@@ -15,6 +15,7 @@ Note:
 
 The boundaries of each input argument are 1 <= left <= right <= 10000.
 """
+
 class Solution(object):
     def selfDividingNumbers(self, left, right):
         """
