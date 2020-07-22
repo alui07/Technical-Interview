@@ -46,3 +46,4 @@ class Solution(object):
                 countDict[s[i]] += 1
         return countDict
     
+    #dictionary.get(key, []), if get returns None, insert [] automatically.
